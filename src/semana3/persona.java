@@ -11,11 +11,21 @@ package semana3;
 public class persona {
     private String nombre;
     private int cedula;
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
     
     //constructor
-    public persona(){
-        this.nombre = "";
-        this.cedula = 0;
+    public persona(int id, String nombre, int cedula){
+        this.id = id;
+        this.nombre = nombre;
+        this.cedula = cedula;
     }
 
     public String getNombre() {

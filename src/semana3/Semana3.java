@@ -22,14 +22,33 @@ public class Semana3 {
         
         
         //----------PILAS----------
-        stack <String> Pila = new stack<String>();
-        Pila.push("Jose");
-        Pila.push("Maria");
-        Pila.push("Pablo");
-        System.out.println(Pila.pop());
-        System.out.println(Pila.pop());
-        System.out.println(Pila.pop());
-        System.out.println(Pila.pop());
+        //stack <String> Pila = new stack<String>();
+        //Pila.push("Jose");
+        //Pila.push("Maria");
+        //Pila.push("Pablo");
+        //System.out.println(Pila.pop());
+        //System.out.println(Pila.pop());
+        //System.out.println(Pila.pop());
+        //System.out.println(Pila.pop());
+        
+        //-------------Colas-------------
+//        queue<Integer> cola = new queue<Integer>();
+//        cola.enqueue(1);
+//        cola.enqueue(2);
+//        cola.enqueue(3);
+//        System.out.println(cola.dequeue());
+//        System.out.println(cola.dequeue().getValue());
+
+
+        //-----------lista---------
+        lista lista = new lista();
+        lista.insertar(new persona(5, "Juan", 1111));
+        lista.insertar(new persona(5, "Pedro", 2222));
+        lista.insertar(new persona(15, "Pepe", 3333));
+        lista.insertar(new persona(25, "Marco", 4444));
+        lista.insertar(new persona(20, "Luis", 5555));
+
+        lista.imprimirLista();
     }
     
 }

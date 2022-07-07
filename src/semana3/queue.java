@@ -13,7 +13,7 @@ public class queue<T> {
     private node<T> tail;
     
     public void enqueue(T value){
-        node<T> newNode = new node<T> (value);
+        node<T> newNode = new node<T> ();
         
         if (head == null) {
             head = newNode;
@@ -22,6 +22,18 @@ public class queue<T> {
         else{
             tail.setNext(newNode);
             tail = newNode;
+        }
+    }
+    
+    public node<T> dequeue(){
+        if (head == null) {
+            System.out.println("La cola ya se encuentra vacia");
+            return null;
+        }
+        else{
+            node<T> firstInQueue = head;
+            head = head.getNext();
+            return firstInQueue;
         }
     }
 }

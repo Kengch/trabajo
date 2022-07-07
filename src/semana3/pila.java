@@ -25,7 +25,7 @@ public class pila {
     }
     
     public void apilar(){
-        persona p = new persona();
+        persona p = new persona(1, "juan", 1111);
         p.setNombre(JOptionPane.showInputDialog(null, "Digite su nombre"));
         p.setCedula(Integer.parseInt(JOptionPane.showInputDialog(null, "Digite su numero de cedula")));
         nodo nuevo = new nodo();

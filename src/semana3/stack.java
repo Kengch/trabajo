@@ -13,7 +13,7 @@ public class stack<T> {
     private int cantidad;
     
     public void push(T value){
-        node<T> newNode = new node<T>(value);
+        node<T> newNode = new node<T>();
         
         if (top == null) {
             top = newNode;
